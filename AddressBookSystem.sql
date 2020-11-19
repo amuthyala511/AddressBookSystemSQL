@@ -19,3 +19,4 @@ UPDATE contacts SET Zip = 500049 WHERE FirstName = 'Panu';
 DELETE FROM contacts WHERE FirstName = 'Shiv';
 SELECT * FROM contacts WHERE City = 'Chennai';
 SELECT COUNT(*) FROM contacts WHERE State = 'TG';
+SELECT	* FROM contacts WHERE City = 'KNR' ORDER BY FirstName ASC;
