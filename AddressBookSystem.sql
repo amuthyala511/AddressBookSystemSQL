@@ -54,3 +54,5 @@ INSERT INTO Family(FirstName, LastName, Address, City, State, Zip, PhoneNumber, 
 INSERT INTO Friend(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email) VALUES
 ('Abhi', 'Ram', 'Mylapore', 'Chennai', 'TN', '600039', '919912345678', 'abhi@gmail.com'),
 ('Pranay', 'Reddy', 'Begur', 'Mysore', 'KA', '560068', '8790654321', 'pranay@gmail.com');
+UPDATE contacts SET AddressBookName = 'FamilyBook' WHERE FirstName = 'Aish';
+UPDATE contacts SET AddressBookName = 'FriendsBook' WHERE FirstName = 'Vishal';
