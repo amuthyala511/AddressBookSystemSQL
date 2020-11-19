@@ -26,3 +26,4 @@ UPDATE contacts SET AddressBookName = 'FamilyBook' WHERE FirstName = 'Aish';
 UPDATE contacts SET AddressBookType = 'Family' WHERE FirstName = 'Aish';
 UPDATE contacts SET AddressBookName = 'FriendsBook' WHERE FirstName = 'Vishal';
 UPDATE contacts SET AddressBookType = 'Friend' WHERE FirstName = 'Vishal';
+SELECT COUNT(*) FROM contacts WHERE addressBookType = 'Family';
