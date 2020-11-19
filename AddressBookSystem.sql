@@ -15,3 +15,4 @@ INSERT INTO contacts ( FirstName, LastName, Address, City, State, Zip, PhoneNumb
 ( 'Panu', 'Muthyala', 'SCHomes', 'HYD', 'TG', 505468, 9876543210, 'panu@gmail.com' ),
 ( 'Shiv', 'Kumar', 'MCHS', 'Bangalore', 'KA', 560076, 7689054321, 'shiv@yahoo.com' ),
 ( 'Vishal', 'Chander', 'Perambur', 'Chennai', 'TN', 600011, 7098654321, 'chan@gmail.com' );
+UPDATE contacts SET Zip = 500049 WHERE FirstName = 'Panu';
