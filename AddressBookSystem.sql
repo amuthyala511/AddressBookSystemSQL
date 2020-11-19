@@ -18,4 +18,4 @@ INSERT INTO contacts ( FirstName, LastName, Address, City, State, Zip, PhoneNumb
 UPDATE contacts SET Zip = 500049 WHERE FirstName = 'Panu';
 DELETE FROM contacts WHERE FirstName = 'Shiv';
 SELECT * FROM contacts WHERE City = 'Chennai';
-SELECT COUNT(*) FROM AddressBook WHERE State = 'TG';
+SELECT COUNT(*) FROM contacts WHERE State = 'TG';
