@@ -17,3 +17,4 @@ INSERT INTO contacts ( FirstName, LastName, Address, City, State, Zip, PhoneNumb
 ( 'Vishal', 'Chander', 'Perambur', 'Chennai', 'TN', 600011, 7098654321, 'chan@gmail.com' );
 UPDATE contacts SET Zip = 500049 WHERE FirstName = 'Panu';
 DELETE FROM contacts WHERE FirstName = 'Shiv';
+SELECT * FROM contacts WHERE City = 'Chennai';
