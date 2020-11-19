@@ -27,3 +27,30 @@ UPDATE contacts SET AddressBookType = 'Family' WHERE FirstName = 'Aish';
 UPDATE contacts SET AddressBookName = 'FriendsBook' WHERE FirstName = 'Vishal';
 UPDATE contacts SET AddressBookType = 'Friend' WHERE FirstName = 'Vishal';
 SELECT COUNT(*) FROM contacts WHERE addressBookType = 'Family';
+CREATE TABLE Friend
+( FirstName VARCHAR(50) NOT NULL PRIMARY KEY,
+LastName VARCHAR(50) NOT NULL,
+Address VARCHAR(50) NOT NULL,
+City VARCHAR(50) NOT NULL,
+State VARCHAR(50) NOT NULL,
+Zip INT(30) NOT NULL,
+PhoneNumber INT(30) NOT NULL,
+Email VARCHAR(50) NOT NULL );
+SHOW TABLES;
+CREATE TABLE Family
+( FirstName VARCHAR(50) NOT NULL PRIMARY KEY,
+LastName VARCHAR(50) NOT NULL,
+Address VARCHAR(50) NOT NULL,
+City VARCHAR(50) NOT NULL,
+State VARCHAR(50) NOT NULL,
+Zip INT(30) NOT NULL,
+PhoneNumber INT(30) NOT NULL,
+Email VARCHAR(50) NOT NULL );										
+SHOW TABLES;
+INSERT INTO Family(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email) VALUES
+('Raji', 'Anji', 'BSPT', 'UTNR', 'TG', '501069', '919912349876', 'raji@gmail.com'),
+('Rama', 'Devi', 'Barad','Nanded', 'MH', '503401', '9543216780', 'rama@gmail.com');	
+    
+INSERT INTO Friend(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email) VALUES
+('Abhi', 'Ram', 'Mylapore', 'Chennai', 'TN', '600039', '919912345678', 'abhi@gmail.com'),
+('Pranay', 'Reddy', 'Begur', 'Mysore', 'KA', '560068', '8790654321', 'pranay@gmail.com');
